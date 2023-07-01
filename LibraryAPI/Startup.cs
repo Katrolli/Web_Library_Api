@@ -32,8 +32,8 @@ namespace LibraryAPI
                 .AddDefaultTokenProviders();
 
             // Configure JWT authentication
-            // var jwtSettings = Configuration.GetSection("JwtSettings");
-            var key = Encoding.ASCII.GetBytes("Secret1Library2Key3");
+            var jwtSettings = Configuration.GetSection("JwtSettings");
+            var key = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
 
             services.AddAuthentication(options =>
             {
@@ -46,8 +46,8 @@ namespace LibraryAPI
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidIssuer = "http://localhost:5142",
-                    ValidAudience = "http://localhost:3000",
+                    ValidIssuer = jwtSettings["Issuer"],
+                    ValidAudience = jwtSettings["Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                 };
             });
