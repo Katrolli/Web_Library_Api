@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enniocano/Desktop/Web_library_api/LibraryAPI/LibraryAPI.csproj": {}
+    "/Users/enniocano/Desktop/Web_Library_Api/LibraryAPI/LibraryAPI.csproj": {}
   },
   "projects": {
-    "/Users/enniocano/Desktop/Web_library_api/LibraryAPI/LibraryAPI.csproj": {
+    "/Users/enniocano/Desktop/Web_Library_Api/LibraryAPI/LibraryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enniocano/Desktop/Web_library_api/LibraryAPI/LibraryAPI.csproj",
+        "projectUniqueName": "/Users/enniocano/Desktop/Web_Library_Api/LibraryAPI/LibraryAPI.csproj",
         "projectName": "LibraryAPI",
-        "projectPath": "/Users/enniocano/Desktop/Web_library_api/LibraryAPI/LibraryAPI.csproj",
+        "projectPath": "/Users/enniocano/Desktop/Web_Library_Api/LibraryAPI/LibraryAPI.csproj",
         "packagesPath": "/Users/enniocano/.nuget/packages/",
-        "outputPath": "/Users/enniocano/Desktop/Web_library_api/LibraryAPI/obj/",
+        "outputPath": "/Users/enniocano/Desktop/Web_Library_Api/LibraryAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/enniocano/.nuget/NuGet/NuGet.Config"

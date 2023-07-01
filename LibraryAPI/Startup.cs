@@ -25,6 +25,8 @@ namespace LibraryAPI
         {
             // Add DbContext and identity services
             services.AddDbContext<DatabaseContext>();
+
+
             services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<DatabaseContext>()
                 .AddDefaultTokenProviders();

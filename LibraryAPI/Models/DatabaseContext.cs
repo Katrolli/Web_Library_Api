@@ -14,7 +14,7 @@ public partial class DatabaseContext : IdentityDbContext<User, Role, int>
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySql("server=localhost;database=librarydb;user=root;password=", new MySqlServerVersion(new Version(8, 0, 33)));
+        optionsBuilder.UseMySql("server=localhost;database=librarydb;user=user;password=password", new MySqlServerVersion(new Version(8, 0, 33)));
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
