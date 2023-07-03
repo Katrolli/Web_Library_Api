@@ -133,6 +133,7 @@ namespace LibraryAPI
             app.UseRouting();
 
             app.UseCors("ReactApp");
+            app.UseHttpsRedirection();
 
             app.UseAuthentication();
             app.UseMiddleware<JwtMiddleware>();
