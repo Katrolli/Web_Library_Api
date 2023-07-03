@@ -29,7 +29,6 @@ namespace LibraryAPI.Controllers
         public async Task<ActionResult<IEnumerable<BookDto>>> Get()
         {
             var currentUser = await _userManager.GetUserAsync(User);
-            Console.Write(currentUser + "ahashahsfhahahahhaha");
             var booksQuery = _dbContext.Books
                 .Include(b => b.Author)
                 .Include(b => b.Categories)

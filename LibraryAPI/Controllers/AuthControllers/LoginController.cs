@@ -19,7 +19,7 @@ using LibraryAPI.Models.AuthModels;
 namespace Backend_Web_Lib.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class AccountController : ControllerBase
     {
         private readonly UserManager<User> _userManager;
