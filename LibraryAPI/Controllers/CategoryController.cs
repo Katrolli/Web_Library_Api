@@ -24,7 +24,7 @@ namespace LibraryAPI.Controllers
             _dbContext = dbContext;
             _userManager = userManager;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> Get()
         {
@@ -41,7 +41,7 @@ namespace LibraryAPI.Controllers
             }).ToList();
             return Ok(categoryDtos);
         }
-
+        [Authorize]
         [HttpGet("{id}")]
         public ActionResult<Category> Get(int id)
         {

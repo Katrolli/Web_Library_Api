@@ -89,9 +89,7 @@ namespace LibraryAPI.Controllers
             };
             return Ok(bookDto);
         }
-
         [HttpDelete("{id}")]
-        [Authorize("AdminOnly")]
         public IActionResult Delete(int id)
         {
             Console.WriteLine(id);
